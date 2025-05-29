@@ -1,5 +1,11 @@
 "use client"
 
+import WhyEdenOceans from "./WhyEdenOceans";
+import JoinUs from "./JoinUs";
+import FAQs from "./FAQs";
+import BlogInsights from "./BlogInsights";
+import ContactUs from "./ContactUs";
+import MeetTheFounders from "./MeetTheFounders";
 import logo from './WhatsApp Image 2025-05-28 at 16.16.22_2dab7b22.jpg';
 import { useState, useEffect, useCallback } from "react"
 import { Button } from "./ui/button"
@@ -155,7 +161,7 @@ export default function ExclusiveResorts() {
     {
       title: "Dubai",
       description: "Personalized wellness and spa treatments",
-      image: "https://images.pexels.com/photos/2044434/pexels-photo-2044434.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://images.pexels.com/photos/7264037/pexels-photo-7264037.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       title: "Bali",
@@ -319,7 +325,7 @@ export default function ExclusiveResorts() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 bg-gray-50" id="destinations">
+      <section className="py-20 bg-gray-50 mt-32" id="destinations">
         <div className="container mx-auto px-4">
           <div
             className={`text-center mb-16 `}
@@ -335,7 +341,7 @@ Seychelles—empowering you to align body, mind, and spirit.
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {destinations.map((destination, index) => (
+            {destinations.map((destination) => (
               <Card
                 key={destination.name}
                 className={`group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-xl  
@@ -355,7 +361,7 @@ Seychelles—empowering you to align body, mind, and spirit.
                   <h3 className="text-xl font-semibold mb-3">{destination.name}</h3>
                   <div className="flex flex-wrap gap-2">
                     {destination.activities.map((activity) => (
-                      <Badge key={activity} variant="outline" className="text-xs">
+                      <Badge key={activity}  className="text-xs text-[#a3957c]">
                         {activity}
                       </Badge>
                     ))}
@@ -369,44 +375,56 @@ Seychelles—empowering you to align body, mind, and spirit.
 
 
             {/* Membership CTA Section */}
-            <section className="py-20 bg-[#FBF3A0]" id="membership">
+            <section className="py-20 bg-[#FBF3A0] mt-32" id="membership">
         <div className="container mx-auto px-4">
           <div
             className={`max-w-4xl mx-auto text-center transform transition-all duration-2000 ${
               isVisible.membership ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]">Who We Are</h2>
-            <p className="text-xl mb-8 text-[#a3957c] font-semibold ">
+            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]" data-aos="fade-left">Who We Are</h2>
+            <p className="text-xl mb-8 text-[#a3957c] font-semibold " data-aos="zoom-out">
             EdenOceans is where luxury meets holistic wellness. We are a global travel and
 wellness club designed for high-achieving women and men who seek more than a getaway we
 off er transformation. Through ocean cruises, riverboat cruises, elite travel, personalized
 coaching, and spiritual alignment, we guide our members toward vitality, joy, and meaningful
 connection in destinations like Phuket, Seychelles, and beyond..
             </p>
-            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]">Mission:</h2>
-            <p className="text-xl mb-8 text-[#a3957c] font-semibold">
+            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]" data-aos="fade-right">Mission:</h2>
+            <p className="text-xl mb-8 text-[#a3957c] font-semibold" data-aos="zoom-in">
             We curate transformative wellness journeys that blend elite hospitality, strong social support systems,
 personalized wellness programs, lifestyle coaching and seamless concierge services, with home care, and travel to selected 5
 star resorts across the world. Through global partnerships with world-class resorts and wellness experts, we off er our
 members access to premium retreats, & home wellness programs, designed to elevate physical vitality, mental clarity,
 emotional balance, and soulful living.
             </p>
-            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]">Vision</h2>
-            <p className="text-xl mb-8 text-[#a3957c] font-semibold">
+            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]" data-aos="fade-right">Vision</h2>
+            <p className="text-xl mb-8 text-[#a3957c] font-semibold" data-aos="zoom-out">
             To be the world's most exclusive integrated wellness club, empowering high-achieving individuals to experience
 holistic rejuvenation, relaxation, restoration and life style transformation at the finest luxury destinations across the globe.
             </p>
-            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]">Core Values</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 text-[#0D1E6E]" data-aos="fade-left">Core Values</h2>
             <ul>
-              <li><p className="text-xl mb-8 text-[#a3957c] font-semibold">Intentional ulving: We believe in living with purpose, presence, and mindfulness.
+              <li data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"><p className="text-xl mb-8 text-[#a3957c] font-semibold" >Intentional ulving: We believe in living with purpose, presence, and mindfulness.
 Every experience we curate empowers our members to align their inner wellbeing with their
 outer lifestyle.</p></li>
-              <li><p className="text-xl mb-8 text-[#a3957c] font-semibold">Transformational Travel: We view travel not as escape, but as elevation—a gateway to
+              <li data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"><p className="text-xl mb-8 text-[#a3957c] font-semibold">Transformational Travel: We view travel not as escape, but as elevation—a gateway to
               healing, self-discovery, and renewal in the most inspiring places on Earth</p></li>
-              <li><p className="text-xl mb-8 text-[#a3957c] font-semibold">Service Excellence: We are uncompromising in our standards. From curated retreats
+              <li data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"><p className="text-xl mb-8 text-[#a3957c] font-semibold">Service Excellence: We are uncompromising in our standards. From curated retreats
               to concierge services, every detail is designed to deliver elegance, privacy, and lasting impact</p></li>
-              <li><p className="text-xl mb-8 text-[#a3957c] font-semibold">Visual Elements: A video snippet of a riverboat cruise in Bali, paired with images of
+              <li data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"><p className="text-xl mb-8 text-[#a3957c] font-semibold">Visual Elements: A video snippet of a riverboat cruise in Bali, paired with images of
               members meditating by the ocean in Barbados or enjoying a safari in Kenya. Use a deep blue</p></li>
              
             </ul>
@@ -416,7 +434,7 @@ outer lifestyle.</p></li>
       </section>
 
             {/* Membership Tiers */}
-            <section className="py-20 bg-gray-50" id="testimonials">
+            <section className="py-20 bg-gray-50 mt-32" id="testimonials">
         <div className="container mx-auto px-4">
           <div
             className={`text-center mb-16 transform transition-all duration-2000 ${
@@ -493,7 +511,7 @@ outer lifestyle.</p></li>
 
 
       {/* Experiences Section */}
-      <section className="py-20" id="experiences">
+      <section className="py-20 mt-32" id="experiences">
         <div className="container mx-auto px-4">
 
 
@@ -536,6 +554,9 @@ outer lifestyle.</p></li>
 
 
 
+
+
+
           <div
             className={`text-center mb-16 transform transition-all duration-2000 ${
               isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
@@ -572,12 +593,37 @@ outer lifestyle.</p></li>
           </div>
         </div>
       </section>
+      
+      {/* WhyEdenOceans */}
+      <section className="py-20 mt-32" id="experiences">
+        <WhyEdenOceans />
+      </section>
+
+      <section className="py-20 mt-32" id="Join Us" >
+      <JoinUs />
+      </section>
+
+      <section className="py-20 mt-32" id="experiences">
+      <FAQs />
+      </section>
+
+      <section className="py-20 mt-32" id="experiences">
+      <BlogInsights />
+      </section>
+
+      <section className="py-20 mt-32" id="experiences">
+      <ContactUs />
+      </section>
+
+      <section className="py-20 mt-32" id="experiences">
+      <MeetTheFounders />
+      </section>
 
 
 
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
+      <footer className="bg-gray-900 text-white py-16 mt-32">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
