@@ -226,7 +226,7 @@ export default function ExclusiveResorts() {
         </div>
 
         <div
-          className={`relative z-10 text-center text-white max-w-4xl mx-auto px-4 transform transition-all duration-1000 ${
+          className={`relative z-10 text-center text-white max-w-4xl mx-auto px-4 transform transition-all duration-2000 ${
             isVisible.hero ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
           id="hero"
@@ -259,7 +259,7 @@ cruises, and wellness escapes in the world’s most stunning destinations.” in
       <section className="py-20 bg-gray-50" id="destinations">
         <div className="container mx-auto px-4">
           <div
-            className={`text-center mb-16 transform transition-all duration-1000 delay-200 ${
+            className={`text-center mb-16 transform transition-all duration-2000 delay-200 ${
               isVisible.destinations ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
@@ -311,7 +311,7 @@ Seychelles—empowering you to align body, mind, and spirit.
             <section className="py-20 bg-gray-900 text-white" id="membership">
         <div className="container mx-auto px-4">
           <div
-            className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ${
+            className={`max-w-4xl mx-auto text-center transform transition-all duration-2000 ${
               isVisible.membership ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
@@ -358,7 +358,7 @@ outer lifestyle.</p></li>
             <section className="py-20 bg-gray-50" id="testimonials">
         <div className="container mx-auto px-4">
           <div
-            className={`text-center mb-16 transform transition-all duration-1000 ${
+            className={`text-center mb-16 transform transition-all duration-2000 ${
               isVisible.testimonials ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
@@ -369,7 +369,7 @@ outer lifestyle.</p></li>
             
               <Card
                 
-                className={`p-8 border-0 shadow-lg transform transition-all duration-1000 ${
+                className={`p-8 border-0 shadow-lg transform transition-all duration-2000 ${
                   isVisible.testimonials ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 
@@ -388,7 +388,7 @@ outer lifestyle.</p></li>
               </Card>
               <Card
                 
-                className={`p-8 border-0 shadow-lg transform transition-all duration-1000 ${
+                className={`p-8 border-0 shadow-lg transform transition-all duration-2000 ${
                   isVisible.testimonials ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 
@@ -416,7 +416,7 @@ outer lifestyle.</p></li>
       <section className="py-20" id="experiences">
         <div className="container mx-auto px-4">
           <div
-            className={`text-center mb-16 transform transition-all duration-1000 ${
+            className={`text-center mb-16 transform transition-all duration-2000 ${
               isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
@@ -430,7 +430,7 @@ outer lifestyle.</p></li>
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className={`group transform transition-all duration-1000 ${
+                className={`group transform transition-all duration-2000 ${
                   isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${index * 200 + 200}ms` }}
@@ -443,7 +443,7 @@ outer lifestyle.</p></li>
             ))}
           </div>
           <div
-            className={`text-center mb-16 transform transition-all duration-1000 ${
+            className={`text-center mb-16 transform transition-all duration-2000 ${
               isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
@@ -456,7 +456,7 @@ outer lifestyle.</p></li>
             {experiences.map((experience, index) => (
               <div
                 key={experience.title}
-                className={`group transform transition-all duration-1000 ${
+                className={`group transform transition-all duration-2000 ${
                   isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${index * 200 + 200}ms` }}
