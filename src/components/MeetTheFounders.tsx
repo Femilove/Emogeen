@@ -11,7 +11,7 @@ travel, and excellence.
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
       <div className="bg-gray-50 p-6 rounded-lg shadow">
-        <img src="/alexandra.jpg" alt="Alexandra" className="w-24 h-24 rounded-full mx-auto" />
+        <img src="https://images.pexels.com/photos/735552/pexels-photo-735552.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alexandra" className="w-24 h-24 rounded-full mx-auto" />
         <h3 className="text-xl font-bold mt-4 text-center">Alexandra Bennett</h3>
         <p className="text-center text-sm">Co-Founder & Wellness Visionary</p>
         <p className="mt-4 text-gray-700 text-sm text-center">With over 15 years in holistic wellness, Alexandra has curated transformative
@@ -21,7 +21,7 @@ EdenOceans’ mission to make wellbeing an essential part of every lifestyle.</p
       <div className="bg-gray-50 p-6 rounded-lg shadow" data-aos="flip-right"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-        <img src="/michael.jpg" alt="Michael" className="w-24 h-24 rounded-full mx-auto" />
+        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Michael" className="w-24 h-24 rounded-full mx-auto" />
         <h3 className="text-xl font-bold mt-4 text-center">Michael Torres</h3>
         <p className="text-center text-sm">Co-Founder & Travel Innovator</p>
         <p className="mt-4 text-gray-700 text-sm text-center">“Michael’s expertise in luxury travel and hospitality has shaped EdenOceans’

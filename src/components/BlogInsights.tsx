@@ -6,9 +6,9 @@ const BlogInsights = () => (
     <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto" data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">
       {[
-        { title: "5 Mindfulness Practices", img: "thumb1.jpg" },
-        { title: "A Journey to Wholeness", img: "thumb2.jpg" },
-        { title: "Exploring the Seychelles", img: "thumb3.jpg" },
+        { title: "5 Mindfulness Practices", img: "https://images.pexels.com/photos/289586/pexels-photo-289586.jpeg?auto=compress&cs=tinysrgb&w=600" },
+        { title: "A Journey to Wholeness", img: "https://images.pexels.com/photos/1133505/pexels-photo-1133505.jpeg?auto=compress&cs=tinysrgb&w=600" },
+        { title: "Exploring the Seychelles", img: "https://images.pexels.com/photos/840667/pexels-photo-840667.jpeg?auto=compress&cs=tinysrgb&w=600" },
       ].map((post, idx) => (
         <div key={idx} className="bg-white shadow rounded-lg overflow-hidden">
           <img src={post.img} alt="" className="w-full h-40 object-cover" />
