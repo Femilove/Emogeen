@@ -1,4 +1,4 @@
-
+import { Card, CardContent } from "./ui/card"
 
 const BlogInsights = () => (
   <section className="bg-[#FBF3A0] py-12 px-6">
@@ -9,13 +9,29 @@ const BlogInsights = () => (
         { title: "5 Mindfulness Practices", img: "https://images.pexels.com/photos/289586/pexels-photo-289586.jpeg?auto=compress&cs=tinysrgb&w=600" },
         { title: "A Journey to Wholeness", img: "https://images.pexels.com/photos/1133505/pexels-photo-1133505.jpeg?auto=compress&cs=tinysrgb&w=600" },
         { title: "Exploring the Seychelles", img: "https://images.pexels.com/photos/840667/pexels-photo-840667.jpeg?auto=compress&cs=tinysrgb&w=600" },
-      ].map((post, idx) => (
-        <div key={idx} className="bg-white shadow rounded-lg overflow-hidden">
-          <img src={post.img} alt="" className="w-full h-40 object-cover" />
-          <div className="p-4">
-            <h3 className="font-semibold text-lg">{post.title}</h3>
+      ].map((post) => (
+        <Card
+          key={post.title}
+          className={`group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-xl  
+          `}
+            data-aos="zoom-in"
+        >
+          <div className="relative h-64 overflow-hidden">
+            <img
+              src={post.img || "/placeholder.svg"}
+              alt={post.title}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
           </div>
-        </div>
+          <CardContent className="p-6 bg-amber-50">
+            <h3 className="text-xl font-semibold mb-3">{post.title}</h3>
+            <div className="flex flex-wrap gap-2">
+              
+            </div>
+          </CardContent>
+        </Card>
       ))}
     </div>
   </section>
