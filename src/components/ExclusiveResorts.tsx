@@ -149,25 +149,25 @@ export default function ExclusiveResorts() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <div className="text-2xl font-bold text-gray-900">EdenOceans</div>
+              <div className="text-4xl font-bold text-gray-900">EdenOceans</div>
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <div className="relative group">
-                <button className="flex items-center text-gray-900 hover:text-blue-600 transition-colors">
+                <button className="flex items-center text-gray-100 hover:text-blue-600 transition-colors">
                   Destinations <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
               </div>
               <div className="relative group">
-                <button className="flex items-center text-gray-900 hover:text-blue-600 transition-colors">
+                <button className="flex items-center text-gray-100 hover:text-blue-600 transition-colors">
                   Experiences <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
               </div>
-              <Link to="/membership" className="text-gray-900 hover:text-blue-600 transition-colors">
+              <Link to="/membership" className="text-gray-100 hover:text-blue-600 transition-colors">
                 Membership
               </Link>
-              <Link to="/about" className="text-gray-900 hover:text-blue-600 transition-colors">
+              <Link to="/about" className="text-gray-100 hover:text-blue-600 transition-colors">
                 About
               </Link>
             </nav>
@@ -194,8 +194,8 @@ export default function ExclusiveResorts() {
         {isMenuOpen && (
           <div className="lg:hidden bg-white border-t">
             <div className="container mx-auto px-4 py-4">
-              <nav className="flex flex-col space-y-4">
-                <Link to="/destinations" className="text-gray-900 hover:text-blue-600">
+              <nav className="flex flex-col space-y-4 ">
+                <Link to="/destinations" className="text-gray-100 hover:text-blue-600">
                   Destinations
                 </Link>
                 <Link to="/experiences" className="text-gray-900 hover:text-blue-600">
