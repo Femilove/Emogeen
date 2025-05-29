@@ -22,6 +22,8 @@ import {
 } from "lucide-react"
 import { Link } from "react-router-dom"
 
+
+
 export default function ExclusiveResorts() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
@@ -131,6 +133,8 @@ export default function ExclusiveResorts() {
     },
   ]
 
+  
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -221,7 +225,7 @@ export default function ExclusiveResorts() {
 
         <div
           className={`relative z-10 text-center text-white max-w-4xl mx-auto px-4 transform transition-all duration-1000 ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            isVisible.hero ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
           id="hero"
         >
@@ -254,7 +258,7 @@ cruises, and wellness escapes in the world’s most stunning destinations.” in
         <div className="container mx-auto px-4">
           <div
             className={`text-center mb-16 transform transition-all duration-1000 delay-200 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              isVisible.destinations ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-light mb-6">Featured Destinations</h2>
@@ -271,7 +275,7 @@ Seychelles—empowering you to align body, mind, and spirit.
               <Card
                 key={destination.name}
                 className={`group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-500 transform ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                  isVisible.destinations ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${index * 100 + 400}ms` }}
               >
@@ -306,7 +310,7 @@ Seychelles—empowering you to align body, mind, and spirit.
         <div className="container mx-auto px-4">
           <div
             className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              isVisible.membership ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-light mb-6">Who We Are</h2>
@@ -353,7 +357,7 @@ outer lifestyle.</p></li>
         <div className="container mx-auto px-4">
           <div
             className={`text-center mb-16 transform transition-all duration-1000 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              isVisible.testimonials ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-light mb-6">It offers two exclusive membership tiers.</h2>
@@ -364,7 +368,7 @@ outer lifestyle.</p></li>
               <Card
                 
                 className={`p-8 border-0 shadow-lg transform transition-all duration-1000 ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                  isVisible.testimonials ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 
               >
@@ -383,7 +387,7 @@ outer lifestyle.</p></li>
               <Card
                 
                 className={`p-8 border-0 shadow-lg transform transition-all duration-1000 ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                  isVisible.testimonials ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 
               >
@@ -411,7 +415,7 @@ outer lifestyle.</p></li>
         <div className="container mx-auto px-4">
           <div
             className={`text-center mb-16 transform transition-all duration-1000 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-light mb-6">Services/Experiences</h2>
@@ -425,7 +429,7 @@ outer lifestyle.</p></li>
               <div
                 key={service.title}
                 className={`group transform transition-all duration-1000 ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                  isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${index * 200 + 200}ms` }}
               >
@@ -438,7 +442,7 @@ outer lifestyle.</p></li>
           </div>
           <div
             className={`text-center mb-16 transform transition-all duration-1000 ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           >
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -451,7 +455,7 @@ outer lifestyle.</p></li>
               <div
                 key={experience.title}
                 className={`group transform transition-all duration-1000 ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                  isVisible.experiences ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${index * 200 + 200}ms` }}
               >
