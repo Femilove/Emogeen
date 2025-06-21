@@ -6,7 +6,7 @@ import FAQs from "./FAQs";
 import BlogInsights from "./BlogInsights";
 import ContactUs from "./ContactUs";
 import MeetTheFounders from "./MeetTheFounders";
-import logo from './WhatsApp Image 2025-05-28 at 16.16.22_2dab7b22.jpg';
+// import logo from './WhatsApp Image 2025-05-28 at 16.16.22_2dab7b22.jpg';
 import { useState, useEffect, useCallback } from "react"
 import { Button } from "./ui/button"
 import { Card, CardContent } from "./ui/card"
@@ -21,7 +21,7 @@ import {
   Mail,
   MapPin,
  
-  ArrowRight,
+ 
   Instagram,
   Facebook,
   Twitter,
@@ -76,21 +76,21 @@ export default function ExclusiveResorts() {
     return () => observer.disconnect()
   }, [])
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const delay = 3000; // 3 seconds
+  // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  // const delay = 3000; // 3 seconds
 
-  const autoplay = useCallback(() => {
-    if (!emblaApi) return;
-    emblaApi.scrollNext();
-  }, [emblaApi]);
+  // const autoplay = useCallback(() => {
+  //   if (!emblaApi) return;
+  //   emblaApi.scrollNext();
+  // }, [emblaApi]);
 
-  useEffect(() => {
-    if (!emblaApi) return;
-    const interval = setInterval(autoplay, delay);
-    return () => clearInterval(interval); // cleanup on unmount
-  }, [emblaApi, autoplay]);
+  // useEffect(() => {
+  //   if (!emblaApi) return;
+  //   const interval = setInterval(autoplay, delay);
+  //   return () => clearInterval(interval); // cleanup on unmount
+  // }, [emblaApi, autoplay]);
 
-  const images = ['https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT2ziQ7eoHcX8BPXfDX4TMViQwBiovNriw8zviO9TrrVxJ1tbgjNTX7dRGxkTWkj5DPn-GiT7lydv56c98n8EHmXVhHAfjdJdNDFtcNEDM', 'https://s44650.pcdn.co/wp-content/uploads/2023/12/Mauritius-country-report.jpg', 'https://images.pexels.com/photos/5390337/pexels-photo-5390337.jpeg?auto=compress&cs=tinysrgb&h=204&fit=crop&w=228&dpr=2'];
+  // const images = ['https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT2ziQ7eoHcX8BPXfDX4TMViQwBiovNriw8zviO9TrrVxJ1tbgjNTX7dRGxkTWkj5DPn-GiT7lydv56c98n8EHmXVhHAfjdJdNDFtcNEDM', 'https://s44650.pcdn.co/wp-content/uploads/2023/12/Mauritius-country-report.jpg', 'https://images.pexels.com/photos/5390337/pexels-photo-5390337.jpeg?auto=compress&cs=tinysrgb&h=204&fit=crop&w=228&dpr=2'];
 
   const destinations = [
     {
@@ -113,67 +113,67 @@ export default function ExclusiveResorts() {
     },
     {
       name: "Costa Rica",
-      image: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npNpGkO_nPsOgr01rLZhr88CuMl5gft5Zmg-wvlK4EQyb1rTLoQcd2anUn6jehiHaQbDwRgxIkR1WfzrBOsPre1DekHJtoc1W5Wb3AH9rRpz48Ya4pSMm9qoYDxO-sXFgUfh9lz=w810-h468-n-k-no",
+      image: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqNNyYw123h3OwAXXuZr8LNDJ0IyXKnwdUUwKcFy2spE81pbzWAj03enwpN55gwc3TwP3z9qyDNejptBg-gjoYzz9gm2IDN6MVF4fKV8hmrKh8hKsXujOhwjPcQD28iwEbQteos=w810-h468-n-k-no",
       season: "Year-round",
       activities: ["Adventure", "Wildlife", "Beach"],
     },
   ]
 
-  const services = [
-    {
-      image: "https://images.pexels.com/photos/29904815/pexels-photo-29904815/free-photo-of-traditional-boat-with-yellow-sails-in-ha-long-bay.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Ocean Cruises:",
-      description: " Luxurious cruises in destinations like the Maldives, Seychelles, and FijiIslands, off ering wellness activities onboard and shore excursions to pristine beaches and luxury resorts."
+  // const services = [
+  //   {
+  //     image: "https://images.pexels.com/photos/29904815/pexels-photo-29904815/free-photo-of-traditional-boat-with-yellow-sails-in-ha-long-bay.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //     title: "Ocean Cruises:",
+  //     description: " Luxurious cruises in destinations like the Maldives, Seychelles, and FijiIslands, off ering wellness activities onboard and shore excursions to pristine beaches and luxury resorts."
  
-    },
-    {
-      image: "https://images.pexels.com/photos/1117773/pexels-photo-1117773.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Riverboat Cruises:",
-      description: "  Serene riverboat experiences in Bali and Phuket, combining relaxation with cultural immersion and wellness practices."
+  //   },
+  //   {
+  //     image: "https://images.pexels.com/photos/1117773/pexels-photo-1117773.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //     title: "Riverboat Cruises:",
+  //     description: "  Serene riverboat experiences in Bali and Phuket, combining relaxation with cultural immersion and wellness practices."
  
-    },
-    {
-      image: "https://images.pexels.com/photos/7264037/pexels-photo-7264037.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Luxury Wellness Retreats (Local & International):",
-      description: "  Immersive experiences in destinations like Mauritius, Barbados, and Cape Verde, blending relaxation, adventure, and healing at luxury resorts.."
+  //   },
+  //   {
+  //     image: "https://images.pexels.com/photos/7264037/pexels-photo-7264037.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //     title: "Luxury Wellness Retreats (Local & International):",
+  //     description: "  Immersive experiences in destinations like Mauritius, Barbados, and Cape Verde, blending relaxation, adventure, and healing at luxury resorts.."
  
-    },
-    {
-      image: "https://images.pexels.com/photos/2862070/pexels-photo-2862070.jpeg?auto=compress&cs=tinysrgb&w=600",
-      title: "Safari & Wellness Journeys:",
-      description: "  Unique experiences in Kenya and Tanzania, combining safaris with wellness retreats for a transformative adventure."
+  //   },
+  //   {
+  //     image: "https://images.pexels.com/photos/2862070/pexels-photo-2862070.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //     title: "Safari & Wellness Journeys:",
+  //     description: "  Unique experiences in Kenya and Tanzania, combining safaris with wellness retreats for a transformative adventure."
  
-    },
+  //   },
 
-  ]
+  // ]
 
-  const experiences = [
-    {
-      title: "Maldives",
-      description: "World-class culinary experiences in the comfort of your residence",
-      image: "https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      title: "Mauritius",
-      description: "Curated adventures and exclusive access to unique experiences",
-      image: "https://images.pexels.com/photos/3703465/pexels-photo-3703465.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      title: "Dubai",
-      description: "Personalized wellness and spa treatments",
-      image: "https://images.pexels.com/photos/7264037/pexels-photo-7264037.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      title: "Bali",
-      description: "Personalized wellness and spa treatments",
-      image: "https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      title: "Phuket & Twin Sands, Thailand:",
-      description: "Personalized wellness and spa treatments",
-      image: "https://images.pexels.com/photos/472309/pexels-photo-472309.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-  ]
+  // const experiences = [
+  //   {
+  //     title: "Maldives",
+  //     description: "World-class culinary experiences in the comfort of your residence",
+  //     image: "https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //   },
+  //   {
+  //     title: "Mauritius",
+  //     description: "Curated adventures and exclusive access to unique experiences",
+  //     image: "https://images.pexels.com/photos/3703465/pexels-photo-3703465.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //   },
+  //   {
+  //     title: "Dubai",
+  //     description: "Personalized wellness and spa treatments",
+  //     image: "https://images.pexels.com/photos/7264037/pexels-photo-7264037.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //   },
+  //   {
+  //     title: "Bali",
+  //     description: "Personalized wellness and spa treatments",
+  //     image: "https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //   },
+  //   {
+  //     title: "Phuket & Twin Sands, Thailand:",
+  //     description: "Personalized wellness and spa treatments",
+  //     image: "https://images.pexels.com/photos/472309/pexels-photo-472309.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //   },
+  // ]
 
   return (
     <div className="min-h-screen bg-white">
