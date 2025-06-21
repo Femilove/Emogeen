@@ -180,45 +180,45 @@ export default function ExclusiveResorts() {
       {/* Header */}
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrollY > 50 ? "bg-[#0D1E6E] shadow-lg" : "bg-transparent"
+          scrollY > 50 ? "bg-white shadow-lg" : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-4 bg-[#0D1E6E]">
+        <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <div className="text-3xl font-bold text-gray-900 rounded-[2vw]"><img src={logo} alt="My Logo" width="70" height="70"></img></div>
+              <div className="text-3xl font-bold text-gray-900">EdenOceans</div>
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <div className="relative group">
-                <button className="flex items-center text-gray-100 hover:text-blue-600 transition-colors">
+                <button className="flex items-center text-gray-950 hover:text-blue-600 transition-colors">
                   Destinations <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
               </div>
               <div className="relative group">
-                <button className="flex items-center text-gray-100 hover:text-blue-600 transition-colors">
+                <button className="flex items-center text-gray-950 hover:text-blue-600 transition-colors">
                   Experiences <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
               </div>
-              <Link to="/membership" className="text-gray-100 hover:text-blue-600 transition-colors">
+              <Link to="/membership" className="text-gray-950 hover:text-blue-600 transition-colors">
                 Membership
               </Link>
-              <Link to="/about" className="text-gray-100 hover:text-blue-600 transition-colors">
+              <Link to="/about" className="text-gray-950 hover:text-blue-600 transition-colors">
                 About
               </Link>
             </nav>
 
             {/* Right Side */}
-            <div className="flex items-center space-x-4 text-gray-100">
+            <div className="flex items-center space-x-4">
               <Button variant="ghost" size="icon">
                 <Search className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon">
                 <User className="h-5 w-5" />
               </Button>
-              <Button className="hidden lg:inline-flex text-[#0D1E6E] bg-[#FBF3A0] hover:bg-blue-700">Sign up</Button>
+              <Button className="hidden lg:inline-flex bg-blue-600 hover:bg-blue-700">Contact Us</Button>
 
               {/* Mobile Menu Button */}
               <Button variant="ghost" size="icon" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -245,7 +245,7 @@ export default function ExclusiveResorts() {
                 <Link to="/about" className="text-gray-900 hover:text-blue-600">
                   About
                 </Link>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">Sign Up</Button>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">Contact Us</Button>
               </nav>
             </div>
           </div>
@@ -255,66 +255,35 @@ export default function ExclusiveResorts() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-        <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">
-          {images.map((src, i) => (
-            <div key={i} className="min-w-full">
-              <img src={src} alt={`Slide ${i}`} className="w-full h-full object-cover" />
-            </div>
-          ))}
-        </div>
-      </div>
-          {/* <video
-            src="https://videos.pexels.com/video-files/1409899/1409899-sd_640_360_25fps.mp4"
-            
+          <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&h=1080&fit=crop"
+            alt="Luxury Resort"
             className="w-full h-full object-cover"
-          ></video> */}
-          
+          />
           <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        <div>
-
-
-          {/* First animation */}
-          <div
-            className={`relative z-10 text-center text-white max-w-4xl mx-auto px-4 transform transition-all duration-2000 ${
-              isVisible.hero ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
-            id="hero">
-            <h1 className="text-5xl md:text-7xl font-light mb-6 leading-tight">
-            Luxury wellness.
-              <br />
-              <span className="font-normal">re-imagined for you.</span>
-            </h1>
-          </div>
-
-
-          {/* Second animation */}
-          <div
-            className={`relative z-10 text-center text-white max-w-4xl mx-auto px-4 transform transition-all duration-6000 ${
-              isVisible.hero ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
-            id="hero">
-            <p className="text-xl md:text-2xl mb-8 font-light">
-            Embark on transformative journeys with ocean cruises, riverboat
-  cruises, and wellness escapes in the world’s most stunning destinations.
-            </p>
-          </div>
-
-
-          {/* Third animation */}
-          <div
-            className={`relative z-10 text-center text-white max-w-4xl mx-auto px-4 transform transition-all duration-10000 ${
-              isVisible.hero ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
-            id="hero">
+        <div
+          className={`relative z-10 text-center text-white max-w-4xl mx-auto px-4 transform transition-all duration-2000 ${
+            isVisible.hero ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
+          id="hero"
+        >
+          <h1 className="text-5xl md:text-7xl font-light mb-6 leading-tight">
+          Luxury wellness.
+            <br />
+            <span className="font-normal">re-imagined for you.</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 font-light">
+          in elegant gold serif font,
+followed by a subheading: “Embark on transformative journeys with ocean cruises, riverboat
+cruises, and wellness escapes in the world’s most stunning destinations.” in white
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-[#0D1E6E] bg-[#FBF3A0] hover:bg-blue-700 text-lg px-8 py-4">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
             Join the Journey
             </Button>
 
-          </div>
           </div>
         </div>
 
@@ -511,7 +480,7 @@ outer lifestyle.</p></li>
 
 
       {/* Experiences Section */}
-      <section className="py-20 mt-32" id="experiences">
+      {/* <section className="py-20 mt-32" id="experiences">
         <div className="container mx-auto px-4">
 
 
@@ -592,14 +561,14 @@ outer lifestyle.</p></li>
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* WhyEdenOceans */}
       <section className="py-20 mt-32" id="experiences">
         <WhyEdenOceans />
       </section>
 
-      <section className="py-20 mt-32" id="Join Us" >
+       <section className="py-20 mt-32" id="Join Us" >
       <JoinUs />
       </section>
 
@@ -607,7 +576,7 @@ outer lifestyle.</p></li>
       <FAQs />
       </section>
 
-      <section className="py-20 mt-32" id="experiences">
+       <section className="py-20 mt-32" id="experiences">
       <BlogInsights />
       </section>
 
@@ -617,7 +586,7 @@ outer lifestyle.</p></li>
 
       <section className="py-20 mt-32" id="experiences">
       <MeetTheFounders />
-      </section>
+      </section> 
 
 
 
