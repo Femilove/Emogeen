@@ -7,7 +7,7 @@ import BlogInsights from "./BlogInsights";
 import ContactUs from "./ContactUs";
 import MeetTheFounders from "./MeetTheFounders";
 // import logo from './WhatsApp Image 2025-05-28 at 16.16.22_2dab7b22.jpg';
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect} from "react"
 import { Button } from "./ui/button"
 import { Card, CardContent } from "./ui/card"
 import { Badge } from "./ui/badge"
@@ -30,7 +30,7 @@ import {
 import { Link } from "react-router-dom"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import useEmblaCarousel from 'embla-carousel-react';
+// import useEmblaCarousel from 'embla-carousel-react';
 
 
 export default function ExclusiveResorts() {
